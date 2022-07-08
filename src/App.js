@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import AccountPage from "./components/account/AccountPage";
 import CreateNewProduct from "./components/createproduct/CreateNewProduct";
 import EditProduct from "./components/createproduct/EditProduct";
 import Home from "./components/createproduct/Index";
@@ -23,6 +24,7 @@ const App = () => {
       <Route path="/changescreated" element={<ChangesCreated />} />
       <Route path="/delproduct" element={<DelProduct />} />
       <Route path="/productmodal" element={<ProductModal />} />
+      <Route path="/accountpage" element={<AccountPage />} />
     </Routes>
   );
 };
